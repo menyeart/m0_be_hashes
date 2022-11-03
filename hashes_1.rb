@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,24 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+puts foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+puts foods.keys
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods[:pizzas] = 25
+puts foods
 
 
 #-------------------
@@ -36,17 +37,24 @@ p zoo
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+email = {
+  sender: "Matt Enyeart",
+  title: "Adding Pickelball Lines to the Tennis Courts at Daniels Park",
+  importance: "High",
+  been_read: false,
+  user_active: true
+}
 
 # Write code that prints your email hash to the terminal.
-
+puts email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.values
 
 
 #-------------------
@@ -97,3 +105,36 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "Matt Enyeart",
+    title: "Adding Pickelball Lines to the Tennis Courts at Daniels Park",
+    importance: "High",
+    been_read: false,
+    user_active: true 
+  },
+  {
+  sender: "Zion Dog",
+  title: "Woof Woof Woof Woof Woof Woof",
+  importance: "High",
+  been_read: true,
+  user_active: false
+},
+{
+  sender: "Stephanie",
+  title: "Missing Socks",
+  importance: "High",
+  been_read: false,
+  user_active: false 
+},
+{
+  sender: "Neighbor McNeighborson",
+  title: "Loose Dog Menacing the Neighboor/Socks in My Yard",
+  importance: "High",
+  been_read: true,
+  user_active: false 
+}
+]
+
+print emails
